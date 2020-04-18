@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-xs-8 text-center menu-1">
                             <ul>
-                                <li class="active"><a href="index.html">Hem</a></li>
+                                <li><a href="index.html">Hem</a></li>
                                 <li><a href="Aktiviteter.html"><span>Aktiviteter</span></a></li>
                                 <li><a href="gallery.html"><span>Galleri</span></a></li>
                                 <li><a href="about.html"><span>Att hyra Abborrfjället</span></a></li>
@@ -86,6 +86,26 @@
             {% endblock %}
 
             {% block content %}
+            <div class="gtco-section">
+                <div class="gtco-container">
+                    <div class="row animate-box">
+                        <div class="col-md-8 col-md-offset-2 text-center gtco-heading gtco-heading-sm">
+                            <h2>Abborrfjällets historia</h2>
+                        </div>
+                    </div>
+                    <div class="row animate-box">
+                        <div class="col-md-6">
+                                <p>Abborrfjället köptes i början av 30-talet av Folke och Elsie Stenbeck. Folke önskade sig ett ställe i skärgården dit han kunde segla, då segling var hans stora passion.</p>
+                                <p>Valet föll på Abborrfjället, då det är beläget i hjärtat av stockholms skärgård, så långt ut man kan nå på fastlandet, med näst intill obegränsat djup vid klipporna för att lägga till med sin segelbåt.</p>
+                                <p>En liten lekstuga uppfördes högst upp på berget där Folke och Elsie kunde övernatta när de besökte Abborrfjället - ja, det fanns faktiskt så pass stora lekstugor på den tiden. Då familjen började växa i mitten av 30-talet så ersattes lekstugan med ett hus där alla fick plats. Sedan dess har Abborrfjället varit den naturliga knutpunkt för familjen med dess vänner, och har varit värd till många sociala sammankommster genom åren. Då huset varit kraftigt underhållseftersatt under lång tid har den genomgått en renovering i form av ny panet och nya fönster under 2018, samt att många ytskikt invändigt förnyats.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="{% static 'frontend/images/7.jpg' %}" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             {% endblock %}
 
             {% block footer %}
@@ -115,6 +135,8 @@
     <div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
+    {% block js %}
+    {% endblock %}
 
 	<!-- jQuery -->
 	<script src="{% static 'frontend/js/jquery.min.js' %}"></script>
