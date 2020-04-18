@@ -1,0 +1,139 @@
+<html>
+{% load static %}
+    <head>
+        <meta name="google-site-verification" content="cPUMy-hS46ke289dMM71E2dMwqLj-Mt4znTlvZRyeNQ" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Abborrfjället is a website for a rental-summerhouse in the Stockholm archipelago." />
+        <meta name="author" content="Filip Stenbeck" />
+        <meta name="keywords" content="Sommarstuga,Stuga,Skärgård,Stockholm,Värmdö">
+        <title>
+            {% block head_title %}
+                Aborrfjallet
+            {% endblock %}
+        </title>
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="{% static 'frontend/css/animate.css' %}">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="{% static 'frontend/css/icomoon.css' %}">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="{% static 'frontend/css/bootstrap.css' %}">
+
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="{% static 'frontend/css/magnific-popup.css' %}">
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="{% static 'frontend/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'frontend/css/owl.theme.default.min.css' %}">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="{% static 'frontend/css/style.css' %}">
+
+        <!-- Modernizr JS -->
+        <script src="{% static 'frontend/js/modernizr-2.6.2.min.js' %}"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="{% static 'frontend/js/respond.min.js' %}"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="gtco-loader"></div>
+
+        <div id="page">
+            <nav class="gtco-nav" role="navigation">
+                <div class="gtco-container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="gtco-logo"><a href="index.html">Abborrfjället</a></div>
+                        </div>
+                        <div class="col-xs-8 text-center menu-1">
+                            <ul>
+                                <li class="active"><a href="index.html">Hem</a></li>
+                                <li><a href="Aktiviteter.html"><span>Aktiviteter</span></a></li>
+                                <li><a href="gallery.html"><span>Galleri</span></a></li>
+                                <li><a href="about.html"><span>Att hyra Abborrfjället</span></a></li>
+                                <li><a href="contact.html"><span>Kontakta oss</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-2 text-right hidden-xs menu-2">
+                            <ul>
+                                <li><a href="index.html"><img src="{% static 'frontend/images/swedish.png' %}" height="20" width="30"></a></li>
+                                <li><a href="English/index.html"><img src="{% static 'frontend/images/british.png' %}" height="20" width="30"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            {% block header %}
+            	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image:url({% static 'frontend/images/gallery/10.jpg' %});">
+                    <div class="gtco-container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center">
+                                <div class="display-t">
+                                    <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                                        <h1>Abborrfjället</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            {% endblock %}
+
+            {% block content %}
+            {% endblock %}
+
+            {% block footer %}
+                <footer id="gtco-footer" role="contentinfo">
+                    <div class="gtco-container">
+                        <div class="row row-pb-md">
+                            <div class="col-md-4 gtco-widget">
+                                <a href = "mailto: abborrfjallet@outlook.com"><h3>abborrfjallet@outlook.com</h3></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=abborrfjallet.se" target="_blank">
+                                    <img src="{% static 'frontend/images/facebook.png' %}" height=auto width="200"></a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-4">
+                                <ul class="gtco-footer-links">
+                                    <li><a href="frontend/index.html">Hem</a></li>
+                                    <li><a href="Aktiviteter.html">Aktiviteter</a></li>
+                                    <li><a href="gallery.html">Galleri</a></li>
+                                    <li><a href="about.html">Att hyra Abborrfjället</a></li>
+                                    <li><a href="contact.html">Kontakta oss</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            {% endblock %}
+
+        </div>
+    <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'frontend/js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'frontend/js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'frontend/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'frontend/js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'frontend/js/jquery.countTo.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'frontend/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'frontend/js/magnific-popup-options.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'frontend/js/main.js' %}"></script>
+    </body>
+
+
+</html>
